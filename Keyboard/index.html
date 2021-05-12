@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Keyboard</title>
+		<link rel="stylesheet" href="keyboard.css">
+
+		<!-- <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css/"> -->
+	</head>
+	<body data-theme="light">
+	
+	<form class="contain" name="system">
+	<input type="text" name="input" class="monitor">
+			<!-- <input type="radio" name="rgby" id="red">
+			<input type="radio" name="rgby" id="yellow">
+			<input type="radio" name="rgby" id="blue">
+			<input type="radio" name="rgby" id="green"> -->
+	<div class="container">
+
+	<div class="row-one">
+
+	<input type="button" value= "~" name="~" onclick="textdisp(this.value)">
+	<input type="button" value= "1" name="1" onclick="textdisp(this.value)">
+	<input type="button" value= "2" name="2" onclick="textdisp(this.value)">
+	<input type="button" value= "3" name="3" onclick="textdisp(this.value">
+	<input type="button" value= "4" name="4" onclick="textdisp(this.value)">
+	<input type="button" value= "5" name="5" onclick="textdisp(this.value)">
+	<input type="button" value= "6" name="6" onclick="textdisp(this.value)">
+	<input type="button" value= "7" name="7" onclick="textdisp(this.value)">
+	<input type="button" value= "8" name="8" onclick="textdisp(this.value)">
+	<input type="button" value= "9" name="9" onclick="textdisp(this.value)">
+	<input type="button" value= "0" name="0" onclick="textdisp(this.value)">
+	<input type="button" value= "-" name="-" onclick="textdisp(this.value)">
+	<input type="button" value= "+" name="+" onclick="textdisp(this.value)">
+	<input class="back" type="button"value= "backspace" name="backspace" onclick="bckspce()">
+
+	</div>
+
+	<div class="row-two">
+
+	<!-- <input type="button" value="tab"class="tab"name="tab"onclick="textdisp(this.value)"> -->
+	<input type="button" value="tab" class="tab">
+	<input type="button" value="Q"  name="Q" onclick="textdisp(this.value)">
+    <input type="button" value="W"  name="W" onclick="textdisp(this.value)">
+    <input type="button" value="E"  name="E" onclick="textdisp(this.value)">
+	<input type="button" value="R"  name="R" onclick="textdisp(this.value)">
+	<input type="button" value="T"  name="T" onclick="textdisp(this.value)">
+	<input type="button" value="Y"  name="Y" onclick="textdisp(this.value)">
+	<input type="button" value="U"  name="U" onclick="textdisp(this.value)">
+	<input type="button" value="I"  name="I" onclick="textdisp(this.value)">
+	<input type="button" value="O"  name="O" onclick="textdisp(this.value)">
+	<input type="button" value="P"  name="P" onclick="textdisp(this.value)">
+	<input type="button" value="["  name="[" onclick="textdisp(this.value)">
+	<input type="button" value="]"  name="]" onclick="textdisp(this.value)">
+	<input type="button" value="\" class="slas" name="\ " onclick="textdisp(this.value)">
+					
+	</div>
+
+	<div class="row-three">
+
+	<!-- <input type="button" value="caps"name="caps" onclick="caps()" class="cap"> -->
+
+	<input type="button" value="caps" class="cap">
+	<input type="button" value="A" name="A" onclick="textdisp(this.value)">
+	<input type="button" value="S" name="S" onclick="textdisp(this.value)">
+	<input type="button" value="D" name="D" onclick="textdisp(this.value)">
+	<input type="button" value="F" name="F" onclick="textdisp(this.value)">
+	<input type="button" value="G" name="G" onclick="textdisp(this.value)">
+	<input type="button" value="H" name="H" onclick="textdisp(this.value)">
+	<input type="button" value="J" name="J" onclick="textdisp(this.value)">
+	<input type="button" value="K" name="K" onclick="textdisp(this.value)">
+	<input type="button" value="L" name="L" onclick="textdisp(this.value)">
+	<input type="button" value=";" name=";" onclick="textdisp(this.value)">
+	<input type="button" value="'" name="'" onclick="textdisp(this.value)">
+	<!-- <input type="button" value="enter"name="enter"onclick="textdisp(this.value)" class="enter"> -->
+	<input type="button" value="enter" class="enter">
+
+	</div>
+	
+	<div class="row-four">
+
+	<!-- <input type="button" value="shift" name="shift" onclick="textdisp(this.value)" class="shift"> -->
+	<input type="button" value="shift" class="shift">
+	<input type="button" value="Z" name="Z" onclick="textdisp(this.value)">
+	<input type="button" value="X" name="X" onclick="textdisp(this.value)">
+	<input type="button" value="C" name="C" onclick="textdisp(this.value)">
+	<input type="button" value="V" name="V" onclick="textdisp(this.value)">
+	<input type="button" value="B" name="B" onclick="textdisp(this.value)">
+	<input type="button" value="N" name="N" onclick="textdisp(this.value)">
+	<input type="button" value="M" name="M" onclick="textdisp(this.value)">
+	<input type="button" value="," name="," onclick="textdisp(this.value)">
+	<input type="button" value="." name="." onclick="textdisp(this.value)">
+	<input type="button" value="/" name="/" onclick="textdisp(this.value)">
+	<!-- <input type="button" value="shift" name="shift" onclick="textdisp(this.value)"class="shift"> -->
+	<input type="button" value="shift"class="shift">
+
+	</div>
+
+	<div class="row-five">
+
+	<!-- <input type="button" value="ctrl"name="ctrl" onclick="textdisp(this.value)"class="last"> -->
+	<!-- <input type="button" value="fn"name="fn" onclick="textdisp(this.value)"class="last">
+	<input type="button" value="win"name="win" onclick="textdisp(this.value)"class="last">
+	<input type="button" value="alt"name="alt" onclick="textdisp(this.value)" class="last"> -->
+	<!-- <input type="button" value="alt"name="alt" onclick="textdisp(this.value)"class="lasAlt">
+	<input type="button" value="ctrl"name="ctrl" onclick="textdisp(this.value)"class="last"> -->
+	<input type="button" value="ctrl" 
+	class="last">
+	<input type="button" value="fn" 
+	class="last">
+	<input type="button" value="win" 
+	class="last">
+	<input type="button" value="alt" 
+	class="last">
+	<input type="button" value="space"name="space" onclick="spacebtn()" class="space">
+	<input type="button" value="alt" 
+	class="last">
+	<input type="button" value="ctrl" 
+	class="last">
+					
+    </div>
+		
+	</div>
+
+		
+	</div>
+	
+
+	</form>
+		
+	<script src="keyboard.js"></script>
+		
+		<!-- <div class="theme-switcher">
+			<input type="checkbox" id="switcher">
+			<label for="switcher">Switcher</label>
+			
+		</div> -->
+
+		<div class="theme-switcher">
+			<div class="checkbox">
+			<input type="checkbox" id="switcher">
+			<label for="switcher">Switcher</label>
+			</div>
+			
+		</div>
+	</body>
+</html>
